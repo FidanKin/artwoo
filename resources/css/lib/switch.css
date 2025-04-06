@@ -1,0 +1,89 @@
+.switch-element {
+    line-height: 0;
+}
+.switch {
+    position: relative;
+    width: 206px;
+    height: 41px;
+    border-radius: 100%;
+    display: inline-block;
+}
+
+.switch input {
+    position: relative;
+    appearance: none;
+    width: 206px;
+    height: 41px;
+    border-radius: 9999px;
+    border: 2px solid #2666E0;
+    background-color: transparent;
+    outline: none;
+    transition: 0.25s;
+}
+
+.switch input::before,
+.switch input::after {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+
+.switch input::before {
+    content: attr(data-on);
+    left: 20px;
+}
+
+.switch input::after {
+    content: attr(data-off);
+    right: 20px;
+}
+
+.switch label {
+    z-index: 1;
+    position: absolute;
+    width: 103px;
+    border-radius: 9999px;
+    height: 41px;
+    background-color: #2666E0;
+}
+
+.switch input:checked::after,
+.switch input:checked::before {
+    color: #fff;
+    transition: color 0.5s;
+}
+
+.switch input:checked+label {
+    left: 0;
+    background-color: #2666E0;
+    transition: left .5s, right .4s .2s;
+}
+
+.switch input:not(:checked) {
+    background-color: rgb(242 245 246);
+    transition: background .4;
+}
+
+.switch input:not(:checked)::before {
+    color: #2666E0;
+    transition: color .5s;
+}
+
+.switch input:not(:checked)::after {
+    color: #fff;
+    transition: color .5s;
+}
+.switch input:checked::after {
+    color: #2666E0;
+    transition: color .5s;
+}
+
+.switch input:not(:checked)+label {
+    left: 103px;
+    background-color: #2666E0;
+    transition: left .5s, right .5s, background;
+}

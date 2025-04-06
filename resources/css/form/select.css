@@ -1,0 +1,38 @@
+.custom-select-color {
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+
+    &.red {
+        background-color: rgb(187, 57, 45);
+    }
+    &.orange {
+        background-color: rgb(234, 107, 31);
+    }
+    &.yellow {
+        background-color: rgb(226, 185, 41);
+    }
+    &.green {
+        background-color: rgb(0, 103, 74);
+    }
+    &.blue {
+        background-color: rgb(10, 26, 180);
+    }
+    &.purple {
+        background-color: rgb(160, 32, 240);
+    }
+    &.brown {
+        background-color: rgb(123, 89, 39);
+    }
+    &.gray {
+        background-color: rgb(194, 194, 194);
+    }
+    &.pink {
+        background-color: rgb(225, 173, 205);
+    }
+    &.black_white {
+        border: 1px solid black;
+        background: linear-gradient(120deg, white 50%, black 50%);
+    }
+}

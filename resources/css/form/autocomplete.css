@@ -1,0 +1,15 @@
+.tagify.autocomplete {
+    border: 0;
+}
+.tagify__tag > div::before {
+    box-shadow: none !important;
+    background-color: black;
+    border-radius: 9px !important;
+}
+.tagify__tag .tagify__tag__removeBtn {
+    color: white;
+}
+/* text for input placeholder */
+.autocomplete.tagify .tagify__input::before {
+    color: black !important; 
+}

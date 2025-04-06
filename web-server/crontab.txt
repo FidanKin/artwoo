@@ -1,0 +1,1 @@
+*/1 * * * * cd /your/directory/project && php artisan example:cron >> /dev/null 2>&1
